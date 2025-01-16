@@ -1,0 +1,209 @@
+/*
+Template Name: Pillarix - Multipurpose Website Template
+Author: Askbootstrap
+Author URI: https://themeforest.net/user/askbootstrap
+Version: 1.0
+*/
+/*
+-- Body
+-- Navbar
+-- Index
+-- News
+-- Contact
+-- Account
+-- Footer
+*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "MontHeavy";
+  src: url("../fonts/DG-Heaven-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Body */
+body {
+  font-family: "MontHeavy", sans-serif;
+  font-size: 14px;
+}
+.display-3 {
+  min-height: 450px;
+}
+.display-3 span {
+  font-family: "MontHeavy", sans-serif;
+  font-size: 51px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+span {
+  font-family: "MontHeavy", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+a:hover {
+  color: #0d6efd;
+}
+.btn {
+  font-size: 14px;
+  padding: 12px 30px !important;
+  font-weight: 600;
+}
+.app-nav a.nav-link.py-4 {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  color: #000;
+  font-size: 15px;
+}
+.btn-primary {
+  background: #3361c4;
+  border-color: #3361c4;
+}
+.app-nav .navbar-nav .nav-link:hover {
+  color: #3361c3;
+}
+.app-nav .navbar-nav .nav-link.active {
+  color: #3361c3;
+}
+.hero-background {
+  background-image: url(../img/bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-primary {
+  color: #3361c3 !important;
+}
+.gradient-text {
+  background: linear-gradient(
+    105deg,
+    #3361c3 0%,
+    #8296d6 23.13%,
+    #ac99e3 42.36%,
+    #e7babb 56.34%,
+    #ef6e45 82.55%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.bg-primary {
+  background-color: #3361c3 !important;
+}
+.bg-light {
+  background-color: #fff9f5 !important;
+}
+
+/* Index */
+.icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-img {
+  width: 40px;
+}
+
+/* News */
+.admin-icon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contact */
+.social-icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Account */
+.icon-sm {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+.our-services ul {
+  padding-right: 15px;
+}
+.our-product ul {
+  padding: 0 !important;
+}
+.our-product ul li {
+  font-size: 13px !important;
+}
+/* Footer */
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_us .description p {
+  margin-bottom: 0 !important;
+}
+
+.our-services h4 {
+  font-size: 23px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.our-services p {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+.our-services .lead {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.our-services li {
+  font-size: 12px;
+  font-weight: 200 !important;
+  opacity: 0.7;
+}
+.our-services .display-1 {
+  font-size: 60px;
+}
+.our-services .block {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  padding: 25px 15px 20px;
+  -webkit-transition: box-shadow 0.3s ease, transform 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease, transform 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease, transform 0.3s ease;
+  -o-transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  min-height: 220px;
+}
+
+.our-services .block:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
