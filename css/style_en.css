@@ -145,11 +145,11 @@ a:hover {
   justify-content: center;
 }
 ul {
-  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 .our-services ul {
-  padding-right: 15px;
+  padding-left: 15px;
 }
 .our-product ul {
   padding: 0 !important;
@@ -346,7 +346,7 @@ ul {
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 85px;
   z-index: 100;
   width: 100%;
@@ -357,7 +357,7 @@ ul {
   width: 100%;
   position: absolute;
   bottom: -5px;
-  left: 0;
+  right: 0;
   z-index: 50;
 }
 
@@ -439,8 +439,8 @@ ul {
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
-  right: auto;
+  right: 10px;
+  left: auto;
 }
 
 /* زر مخصص */
@@ -485,7 +485,7 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin-left: 20px;
+  margin-right: 20px;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -570,7 +570,7 @@ ul {
     height: 2px;
     background-color: var(--main-color);
     position: absolute;
-    left: 50%;
+    right: 50%;
     bottom: -10px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -628,7 +628,7 @@ ul {
 }
 
 .pricing-table .content .price {
-  background: linear-gradient(to right, #ffc300 0%, var(--main-color) 100%);
+  background: linear-gradient(to left, #ffc300 0%, var(--main-color) 100%);
   width: 90px;
   height: 90px;
   margin: auto;
@@ -672,14 +672,14 @@ ul {
   margin: 7px 0px;
   font-size: 14px;
   color: #555;
-  text-align: right;
+  text-align: left;
 }
 .pricing-table .content ul li i {
   color: var(--main-color);
 }
 
 .pricing-table .content .sign-up {
-  background: linear-gradient(to right, #ffc300 0%, var(--main-color) 100%);
+  background: linear-gradient(to left, #ffc300 0%, var(--main-color) 100%);
   border-radius: 40px;
   font-weight: 500;
   position: relative;
@@ -730,7 +730,7 @@ ul {
   border-radius: 50px;
   content: "";
   height: 100%;
-  right: 0;
+  left: 0;
   position: absolute;
   top: 0;
   -webkit-transition: all 0.3s linear;
@@ -885,7 +885,7 @@ ul {
 }
 
 .contact ul li i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .contact ul li {
   margin-bottom: 5px;
@@ -895,7 +895,7 @@ ul {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 30px;
+  left: 30px;
   bottom: 30px;
   z-index: 996;
   background: var(--main-color);
@@ -957,7 +957,7 @@ ul {
 }
 
 .social .getstarted {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .social .getstarted:hover,
