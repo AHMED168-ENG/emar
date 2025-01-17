@@ -62,10 +62,13 @@ Version: 1.0
         }, 1000);
     });
 
+
+
     // Back To Top
     var backButton = document.createElement("button");
     backButton.id = "back-to-top";
     backButton.title = "Go to top";
+    backButton.classList.add("back-to-top");
     backButton.textContent = "Top";
     document.body.appendChild(backButton);
     window.onscroll = function () {
