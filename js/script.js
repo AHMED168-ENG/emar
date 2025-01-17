@@ -12,49 +12,49 @@ Version: 1.0
 -- Quantity Button
 */
 
-(function($) {
+(function ($) {
     "use strict";
 
     // Page Loading
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const preloader = document.querySelector('.page-loading');
         if (preloader) {
             function removePreloader() {
                 preloader.classList.remove('active');
-                setTimeout(function() {
+                setTimeout(function () {
                     preloader.remove();
                 }, 1500);
             }
             removePreloader();
         }
     });
-    
+
     // Count Down Date
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         var daysElement = document.getElementById("days");
         var hoursElement = document.getElementById("hours");
         var minutesElement = document.getElementById("minutes");
         var secondsElement = document.getElementById("seconds");
         var countdownElement = document.getElementById("countdown");
-    
+
         if (!daysElement || !hoursElement || !minutesElement || !secondsElement || !countdownElement) {
             return;
         }
-    
+
         var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
-        var x = setInterval(function() {
+        var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = countDownDate - now;
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+
             daysElement.innerHTML = days;
             hoursElement.innerHTML = hours;
             minutesElement.innerHTML = minutes;
             secondsElement.innerHTML = seconds;
-    
+
             if (distance < 0) {
                 clearInterval(x);
                 countdownElement.innerHTML = "EXPIRED";
@@ -68,7 +68,7 @@ Version: 1.0
     backButton.title = "Go to top";
     backButton.textContent = "Top";
     document.body.appendChild(backButton);
-    window.onscroll = function() {
+    window.onscroll = function () {
         scrollFunction();
     };
     function scrollFunction() {
@@ -78,7 +78,7 @@ Version: 1.0
             backButton.style.display = "none";
         }
     }
-    backButton.onclick = function() {
+    backButton.onclick = function () {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     };
@@ -88,16 +88,16 @@ Version: 1.0
     AOS.refresh();
 
     // Quantity Button
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const productRows = document.querySelectorAll('.product-row');
-        productRows.forEach(function(row) {
+        productRows.forEach(function (row) {
             const quantityInput = row.querySelector('.quantity-input');
             const decrementBtn = row.querySelector('.decrement-btn');
             const incrementBtn = row.querySelector('.increment-btn');
-            decrementBtn.addEventListener('click', function() {
+            decrementBtn.addEventListener('click', function () {
                 decrementQuantity(quantityInput);
             });
-            incrementBtn.addEventListener('click', function() {
+            incrementBtn.addEventListener('click', function () {
                 incrementQuantity(quantityInput);
             });
         });
@@ -117,3 +117,36 @@ Version: 1.0
 
 
 })(window.jQuery);
+
+
+/**
+ * Init swiper slider with 1 slide at once in desktop view
+ */new Swiper('.slides-1', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    noSwiping: true,
+    noSwipingClass: 'swiper-no-swiping',
+    on: {
+        init: function () {
+            document.querySelectorAll('.swiper-no-swiping').forEach(function (el) {
+                el.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                });
+            });
+        }
+    }
+});

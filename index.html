@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Common Css -->
     <link rel="stylesheet" href="./css/common.css">
+    <link href="./css/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,8 +40,8 @@
                 <div class="position-relative d-flex align-items-center gap-2 site-brand">
                     <i class="ri-funds-line fs-2 lh-1 text-primary"></i>
                     <div class="lh-1">
-                        <h5 class="fw-bold m-0">Pillarix</h5>
-                        <small class="text-muted">Application</small>
+                        <img src="./img/emar-logo.png" style="width: 90px;"
+                            class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
                     </div>
                     <a class="stretched-link" href="index.html"></a>
                 </div>
@@ -348,147 +351,308 @@
                         </li> -->
                         <li class="nav-item"><a class="nav-link py-4" href="index.html"></a></li>
                     </ul>
-                    <a href="./index.html" class="btn btn-dark px-3 ms-2 transition-3d-hover rounded-pill"> <i
-                            class="ri-shopping-cart-line me-2"></i> Purchase Now </a>
+                    <a href="#contact" class="btn btn-dark px-3 ms-2 transition-3d-hover rounded-pill"> Contact Us</a>
                 </div>
             </div>
         </nav>
-        <div class="container pt-5 pb-1">
+
+
+        <!-- <div class="container d-flex justify-content-center align-items-center vh-100">
             <div class="row align-items-center g-4 py-5">
-                <div class="col-lg-6 col-12 pe-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-lg-12 col-12 pe-lg-5 text-center" data-aos="fade-right" data-aos-duration="1000">
                     <div class="mb-5">
-                        <!-- Carousel for Titles -->
                         <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"
                             data-bs-pause="hover">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>معًا نحو بناء مستقبل أقوى وأكثر كفاءة</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> اكتشف كيف نلبي احتياجاتك</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        معًا نحو بناء مستقبل أقوى وأكثر كفاءة
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        اكتشف كيف نلبي احتياجاتك
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>إعمار الصحراء الشريك المثالي لمشاريع ناجحة اليوم وغدًا.</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> ابدأ الآن واتصل بنا لتحقيق أهدافك</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        إعمار الصحراء الشريك المثالي لمشاريع ناجحة اليوم وغدًا.
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        ابدأ الآن واتصل بنا لتحقيق أهدافك
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>الجودة أولويتنا والابتكار طريقنا</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> ابدأ معنا اليوم</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        الجودة أولويتنا والابتكار طريقنا
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        ابدأ معنا اليوم
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>حلول متكاملة للطاقة والبناء تضمن التميز في كل خطوة</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> احجز استشارة مجانية مع خبرائنا</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        حلول متكاملة للطاقة والبناء تضمن التميز في كل خطوة
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        احجز استشارة مجانية مع خبرائنا
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>بخبرة واسعة ورؤية مستقبلية نضمن نجاح مشاريعك</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> اكتشف منتجاتنا عالية الجودة</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        بخبرة واسعة ورؤية مستقبلية نضمن نجاح مشاريعك
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        اكتشف منتجاتنا عالية الجودة
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>كل مشروع عظيم يبدأ بخطوة ذكية – ابدأها مع إعمار الصحراء.</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> استعد لمشاريعك بثقة اليوم</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        كل مشروع عظيم يبدأ بخطوة ذكية – ابدأها مع إعمار الصحراء.
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        استعد لمشاريعك بثقة اليوم
+                                    </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="display-3 pb-4 text-black">
-                                        <span>إعمار الصحراء حيث تلتقي الكفاءة مع الابتكار لتحقيق طموحاتك</span>
-                                        <br>
-                                        <span class="gradient-text fw-bold"> ابدأ رحلتك نحو النجاح ابدأ شراكتك
-                                            معنا</span>
-                                    </div>
+                                    <h1 class="display-3 pb-4 text-black">
+                                        إعمار الصحراء حيث تلتقي الكفاءة مع الابتكار لتحقيق طموحاتك
+                                    </h1>
+                                    <a href="#contact" class="gradient-text fw-bold text-decoration-none">
+                                        ابدأ رحلتك نحو النجاح ابدأ شراكتك معنا
+                                    </a>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                            </div>
                         </div>
-
-
                     </div>
                 </div>
-
-
-                <div class="col-lg-6 col-12">
-                    <img src="img/hero.png" alt="user-1" class="img-fluid" data-aos="fade-left"
-                        data-aos-duration="1000">
-                </div>
             </div>
-        </div>
-        <div class="w-100">
-            <img src="img/hero-wave.svg" alt="" class="img-fluid w-100">
-        </div>
+        </div> -->
+
+
+        <section class="header-curosal vh-100" id="home">
+            <div id="ahmed" style="height: 110%;" class="carousel slide slides-1 swiper" data-ride="carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active"
+                        style="background-image: url('./img/hero/hero-01.png');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    نقود الابتكار في حلول الطاقة والمعدات الثقيلة – معًا نحو بناء مستقبل أكثر قوة
+                                    وكفاءة!
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    اكتشف كيف نلبي احتياجاتك!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-01.webp');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    إعمار الصحراء: الشريك المثالي لمشاريعك الناجحة، اليوم وغدًا.
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    ابدأ الآن وتواصل معنا لتحقيق أهدافك!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-02.jpg');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    الجودة أولويتنا، والابتكار مسارنا – ابدأ معنا الآن!
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    تصفح خدماتنا وحلولنا المتنوعة!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-03.jpg');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    توفير حلول متكاملة للطاقة والبناء مع ضمان التميز في كل خطوة.
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    احجز استشارة مجانية مع خبرائنا!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-04.jpg');background-size:cover custom-button swiper-no-swiping">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    مع خبرة طويلة ورؤية مستقبلية، نضمن لك التفوق في مشاريعك.
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    تعرف على منتجاتنا ذات الجودة العالية!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-05.jpg');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    كل مشروع عظيم يبدأ بخطوة ذكية – ابدأها مع إعمار الصحراء.
+                                </h2>
+                                <a href="#contact" class=" custom-button swiper-no-swiping">
+                                    استعد لمشاريعك بثقة معنا اليوم!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./img/hero/hero-06.jpg');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">
+                                    إعمار الصحراء، حيث تلتقي الكفاءة بالابتكار لتلبية طموحاتك.
+                                </h2>
+                                <a href="#contact"
+                                    class=" fw-bold text-decoration-none custom-button swiper-no-swiping">
+                                    انطلق نحو النجاح – ابدأ شراكتك معنا!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#FFF" fill-opacity="1"
+                        d="M0,96L60,128C120,160,240,224,360,218.7C480,213,600,139,720,133.3C840,128,960,192,1080,186.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
     </div>
-    <div class="py-5">
+
+
+
+    <div class="py-5 about">
         <div class="container py-5 about_us">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 col-12 description">
-                    <div class="mb-5 ">
-                        <h1 class="pb-2 display-5 text-black"> <span class="gradient-text fw-bold">من
-                                نحن</span></h1>
-
-                        <p class="text-secondary-emphasis lead">
+                    <div class="mb-5 block">
+                        <h1 class="pb-2 display-5 text-black">
+                            <span class="gradient-text fw-bold">من نحن</span>
+                        </h1>
+                        <p class="text-secondary-emphasis " style="font-size: 18px;">
                             في عالم مليء بالتحديات، تسعى شركة إعمار الصحراء لأن تكون الحجر الأساس الذي يعتمد عليه
                             عملاؤنا
                             لتحقيق نجاحاتهم.
                             منذ تأسيسنا، وضعنا الجودة والابتكار في صميم عملنا، مكرسين أنفسنا لتقديم حلول متكاملة تلبي
-                            احتياجات المشاريع
-                            الضخمة وتدعم رؤية المملكة 2030.
+                            احتياجات المشاريع الضخمة وتدعم رؤية المملكة 2030.
                         </p>
                     </div>
-                    <div class="mb-5">
-                        <h4 class="fw-bold pb-2">تاريخنا</h4>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+
+                            <div class="icon">
+                                <i class="fas fa-history me-2 text-primary"></i>
+                            </div>
+                            <span class="gradient-text">تاريخنا</span>
+                        </h4>
                         <p class="text-secondary-emphasis">
                             بفضل تاريخ غني بالإنجازات وفريق عمل محترف ذو خبرة واسعة، نمكّن عملاءنا من خلال تقديم خدمات
                             ومنتجات استثنائية تضيف قيمة حقيقية لمشاريعهم.
                         </p>
                     </div>
-                    <div class="mb-5">
-                        <h4 class="fw-bold pb-2">رؤيتنا</h4>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-eye me-2 text-primary"></i></div>
+
+                            <span class="gradient-text">رؤيتنا</span>
+                        </h4>
                         <p class="text-secondary-emphasis">
                             أن نصبح الخيار الأول لحلول الطاقة والمعدات الثقيلة في المملكة العربية السعودية، مع التركيز
                             على
                             الابتكار والجودة لتلبية تطلعات عملائنا وتقديم الأفضل دائمًا.
                         </p>
                     </div>
-                    <div class="mb-5">
-                        <h4 class="fw-bold pb-2">هدفنا</h4>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-bullseye me-2 text-primary"></i></div>
+                            <span class="gradient-text">هدفنا</span>
+                        </h4>
                         <p class="text-secondary-emphasis">
                             دعم مشاريع عملائنا بأفضل الأدوات والتقنيات، وضمان نجاحهم في مختلف المجالات الصناعية
                             والإنشائية،
                             مع الالتزام بتقديم قيمة مضافة تعزز كفاءتهم وتميزهم في السوق.
                         </p>
                     </div>
-                    <div class="mb-5">
-                        <h4 class="fw-bold pb-2">رسالتنا</h4>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-envelope me-2 text-primary"></i></div>
+                            <span class="gradient-text">رسالتنا</span>
+                        </h4>
                         <p class="text-secondary-emphasis">
                             تقديم منتجات وخدمات مبتكرة وموثوقة تلبي أعلى معايير الجودة العالمية، مع السعي المستمر لتحقيق
                             رضا
                             العملاء ودعم رؤية السعودية 2030 من خلال الابتكار والاستدامة.
                         </p>
                     </div>
-                    <div>
-                        <h4 class="fw-bold pb-2">قيمنا</h4>
+                    <div class=" block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-heart me-2 text-primary"></i></div>
+                            <span class="gradient-text">قيمنا</span>
+                        </h4>
                         <ul class="text-secondary-emphasis">
-                            <li><strong>التميز:</strong> نقدم عملاً متميزًا مع الانتباه لأدق التفاصيل، حيث إن التميز هو
+                            <li>
+                                <strong>التميز:</strong> نقدم عملاً متميزًا مع الانتباه لأدق التفاصيل، حيث إن التميز هو
                                 ما
-                                يصنع الفرق.</li>
-                            <li><strong>الإبداع:</strong> نعيد تعريف التحديات ونقدم حلولاً مبتكرة تفتح آفاقًا جديدة
-                                للمستقبل.</li>
-                            <li><strong>الشراكة:</strong> نؤمن بأن النجاح الحقيقي يبنى معًا من خلال علاقات تقوم على
+                                يصنع الفرق.
+                            </li>
+                            <li>
+                                <strong>الإبداع:</strong> نعيد تعريف التحديات ونقدم حلولاً مبتكرة تفتح آفاقًا جديدة
+                                للمستقبل.
+                            </li>
+                            <li>
+                                <strong>الشراكة:</strong> نؤمن بأن النجاح الحقيقي يبنى معًا من خلال علاقات تقوم على
                                 الثقة
-                                التعاون.</li>
-                            <li><strong>المسؤولية:</strong> نضع الاستدامة في صميم عملنا لضمان تأثير إيجابي دائم.</li>
+                                والتعاون.
+                            </li>
+                            <li>
+                                <strong>المسؤولية:</strong> نضع الاستدامة في صميم عملنا لضمان تأثير إيجابي دائم.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -508,10 +672,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
 
     <!-- Some Information -->
     <div class="pt-5 pb-5 our-product bg-light">
@@ -1155,7 +1319,12 @@
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="position-relative d-flex align-items-center gap-2 site-brand">
                         <div class="lh-1">
-                            <img style="width: 80px;" src="./img/emar-logo.png" class="logo-header" alt="شعار الشركة" />
+                            <img style="width: 80px;" src="./img/
+                            
+                            
+                            
+                            
+                            " class="logo-header" alt="شعار الشركة" />
                         </div>
                         <a class="stretched-link" href="#"></a>
                     </div>
@@ -2017,6 +2186,8 @@
     <script src="./vender/jquery/jquery-3.6.4.min.js"></script>
     <!-- AOS Js -->
     <script src="./vender/aos/dist/aos.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+
     <!-- Custom Js -->
     <script src="./js/script.js"></script>
 </body>
