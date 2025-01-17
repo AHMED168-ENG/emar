@@ -919,3 +919,49 @@ ul {
   visibility: visible;
   opacity: 1;
 }
+
+.social .social1 {
+  font-size: 15px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 33px;
+  height: 33px;
+  transition: 0.3s;
+  border: 1px solid #fff;
+}
+
+.social .social1:hover {
+  background-color: #ffffff35;
+}
+
+@media (min-width: 992px) {
+  .social .social1 {
+    font-size: 16px;
+    padding: 8px 0;
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.social .getstarted,
+.social .getstarted:focus {
+  padding: 7px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 12px;
+}
+
+.social .getstarted {
+  margin-left: 10px;
+}
+
+.social .getstarted:hover,
+.social .getstarted:focus:hover {
+  color: #fff;
+  background: #ffffff35;
+}
