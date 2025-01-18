@@ -37,7 +37,9 @@ body {
   font-family: "MontHeavy", sans-serif;
   font-size: 51px;
 }
-
+.container {
+  overflow: hidden !important;
+}
 h1,
 h2,
 h3,
@@ -947,22 +949,26 @@ ul {
   }
 }
 
-.social .getstarted,
-.social .getstarted:focus {
+.getstarted,
+.getstarted:focus {
   padding: 7px;
   border-radius: 8px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000;
+  border: 1px solid #000;
   font-size: 12px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-.social .getstarted {
+.getstarted {
   margin-left: 10px;
 }
 
-.social .getstarted:hover,
-.social .getstarted:focus:hover {
-  color: #fff;
+.getstarted:hover,
+.getstarted:focus:hover {
+  color: #000;
   background: #ffffff35;
 }
 
@@ -986,4 +992,13 @@ ul {
 }
 .special {
   color: var(--main-color) !important;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next,
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    margin-top: 68px !important;
+  }
 }
