@@ -42,15 +42,24 @@
         <nav class="navbar osahan-main-nav navbar-expand-lg app-nav py-3 py-lg-0">
             <div class="container">
                 <div class="position-relative d-flex align-items-center gap-2 site-brand">
-                    <i class="ri-funds-line fs-2 lh-1 text-primary"></i>
+
                     <div class="lh-1">
                         <img src="./img/emar-logo.png" style="width: 90px;"
                             class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
                     </div>
                     <a class="stretched-link" href="index.html"></a>
                 </div>
+
+                <div class="d-flex align-items-center d-md-none">
+                    <a href="#contact" style="width: 150px;background:#ffc300"
+                        class="btn  px-3 ms-2 transition-3d-hover rounded-pill" style=""> اتصل بنا </a>
+                    <a class="getstarted mx-2" href="index-en.html">
+                        EN
+                    </a>
+                </div>
                 <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-5 gap-4 d-flex justify-content-center " style="width: 100%;">
 
@@ -58,15 +67,16 @@
                         <li class="nav-item"><a class="nav-link py-4" href="#about_us">عنا</a></li>
                         <li class="nav-item"><a class="nav-link py-4" href="#our_product">منتجاتنا</a></li>
                         <li class="nav-item"><a class="nav-link py-4" href="#services">خدمتنا</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#tamize">تميز اعمار</a></li>
                         <li class="nav-item"><a class="nav-link py-4" href="#contact">تواصل معنا</a></li>
 
                         <li class="nav-item"><a class="nav-link py-4" href="index.html"></a></li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <a href="#contact" style="width: 150px;"
-                            class="btn btn-dark px-3 ms-2 transition-3d-hover rounded-pill"> اتصل بنا </a>
+                        <a href="#contact" style="width: 150px;background:#ffc300"
+                            class="btn  px-3 ms-2 transition-3d-hover rounded-pill" style=""> اتصل بنا </a>
                         <a class="getstarted mx-2" href="index-en.html">
-                            English
+                            EN
                         </a>
                     </div>
 
@@ -74,7 +84,7 @@
             </div>
         </nav>
 
-        <section class="header-curosal vh-100" id="home">
+        <section class="header-curosal " id="home">
             <div id="ahmed" class="carousel slide slides-1 swiper" data-ride="carousel">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide active"
@@ -929,7 +939,7 @@
         </div>
     </div> -->
     <!-- Our Users Love Our App! -->
-    <div class="py-5">
+    <div class="py-5" id="tamize">
         <div class="container py-5">
             <div class="row justify-content-center mb-5">
                 <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
@@ -1230,10 +1240,9 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 text-center">
                     <p class="m-0 text-white-50">
+
+                        تم تصميمه وتطويره بواسطة
                         <a href="https://airmenu.net/contact" target="_blank" class="text-white">Air Menu</a>
-                        Designed and
-                        Developed
-                        by Air Menu
                     </p>
                 </div>
             </div>
@@ -1302,24 +1311,24 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
         <div class="offcanvas-header d-flex align-items-center justify-content-between">
-            <div class="position-relative d-flex align-items-center gap-2 site-brand">
-                <i class="ri-funds-line fs-2 lh-1 text-primary"></i>
+            <div class="position-relative d-flex align-items-center justify-content-between w-100 gap-2 site-brand">
                 <div class="lh-1">
                     <img src="./img/emar-logo.png" style="width: 90px;"
                         class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
                 </div>
+
             </div>
-            <a href="#" class="link-light" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                    class="ri-close-line ri-lg"></i></a>
+            <a href="#" class="link-light close-mnue" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="ri-close-line ri-lg" style="color:#013565;font-size: 30px !important;"></i></a>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body menu-link">
             <div class="sidebar-nav">
                 <ul class="navbar-nav mb-3">
-
                     <li class="nav-item"><a class="nav-link py-4" href="#">الرئيسه</a></li>
                     <li class="nav-item"><a class="nav-link py-4" href="#about_us">عنا</a></li>
                     <li class="nav-item"><a class="nav-link py-4" href="#our_product">منتجاتنا</a></li>
                     <li class="nav-item"><a class="nav-link py-4" href="#services">خدمتنا</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="#tamize">تميز اعمار</a></li>
                     <li class="nav-item"><a class="nav-link py-4" href="#contact">تواصل معنا</a></li>
 
                     <li class="nav-item"><a class="nav-link py-4" href="index.html"></a></li>
@@ -1763,7 +1772,22 @@
     </div>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // الحصول على جميع الروابط داخل القائمة
+            const menuLinks = document.querySelectorAll(".menu-link .nav-link");
+            // الحصول على العنصر الخاص بـ close-mnue
+            const closeButton = document.querySelector(".close-mnue");
 
+            // إضافة مستمع حدث لكل رابط
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    // محاكاة الضغط على زر الإغلاق
+                    closeButton.click();
+                });
+            });
+        });
+    </script>
 
 
     <!-- Nav Sidebar -->

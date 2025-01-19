@@ -29,6 +29,7 @@ Version: 1.0
 body {
   font-family: "MontHeavy", sans-serif;
   font-size: 14px;
+  padding-top: 85px;
 }
 .display-3 {
   min-height: 450px;
@@ -217,7 +218,7 @@ ul {
 }
 
 .header-curosal .swiper-slide {
-  height: 100vh;
+  height: calc(100vh - 85px);
   align-items: center;
   justify-content: center;
 }
@@ -238,7 +239,6 @@ ul {
 
 .header-curosal .swiper-slide .back .over {
   width: 100%;
-  margin-top: -90px;
 }
 .header-curosal .swiper-slide .back .over div span {
   background-image: url("../img/shape/1.png");
@@ -406,7 +406,7 @@ ul {
 
 @media (max-width: 768px) {
   .header-curosal .swiper-slide {
-    height: 80vh;
+    height: calc(100vh - 85px);
   }
   .carousel .swiper-horizontal > .swiper-pagination-bullets,
   .carousel .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -954,7 +954,7 @@ ul {
   padding: 7px;
   border-radius: 8px;
   color: #000;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-size: 12px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -974,6 +974,12 @@ ul {
 
 ::-webkit-scrollbar {
   width: 5px;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  margin-top: -42px !important;
 }
 
 /* Track */
